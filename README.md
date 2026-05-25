@@ -35,7 +35,8 @@ Test images: 597 The dataset is relatively balanced.
 - matplotlib, seaborn: Data visualization, including training history plots and confusion matrices.
 - scikit-learn: Performance metrics (accuracy, recall, precision, F1-score, confusion matrix).
 - cv2: OpenCV for image processing (used for displaying images).
-**Models Developed**
+  
+## **Models Developed**
 Seven different models were explored, ranging from a simple CNN to transfer learning approaches using pre-trained VGG16, ResNet50, EfficientNetB0, and MobileNetV2. All transfer learning models used their base as a frozen feature extractor with a custom classification head.
 
 ## 1️⃣ Simple Convolutional Neural Network (CNN)
