@@ -67,6 +67,8 @@ Approach: Utilized a frozen MobileNetV2 base model (pre-trained on ImageNet) as 
 Performance: Achieved high performance (around 90% accuracy, recall, precision, and F1 Score) on the test set, comparable to Model 2. Its lightweight architecture makes it suitable for mobile deployment scenarios.
 
 ## Model Performance Comparison (Test Set)
+<center> <img src="images/MonReaderPerfomance.png" alt="Perfomance metrics MonReader" width="900"></center>
+
 Model	Accuracy	Recall	Precision	F1 Score
 Simple CNN	0.485762	0.485762	0.492990	0.329165
 VGG-16 (Base)	0.891122	0.891122	0.894616	0.891040
