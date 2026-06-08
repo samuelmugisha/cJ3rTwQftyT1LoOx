@@ -1,4 +1,4 @@
-# 📖 MonReader — Page Flip Detection using Deep Learning
+# 📖 MonReader: Page Flip Detection using Deep Learning
 
 <div align="center">
 
