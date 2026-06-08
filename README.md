@@ -30,7 +30,7 @@ The page flip detector acts as an intelligent trigger mechanism that determines 
 
 ---
 
-# Business Problem
+# 🎈 Business Problem
 
 Traditional document scanning workflows require manual intervention:
 
@@ -47,7 +47,7 @@ The challenge:
 
 ---
 
-# Project Objective
+# 👁️ Project Objective
 
 Develop and compare multiple Deep Learning approaches capable of:
 
@@ -66,7 +66,7 @@ Success was evaluated using:
 
 ---
 
-# Dataset
+# 📊 Dataset
 
 The dataset consisted of smartphone-recorded page flipping videos.
 
@@ -95,7 +95,7 @@ Dataset was relatively balanced.
 
 ---
 
-# Project Workflow
+# ⚙️ Project Workflow
 
 ```text
 Raw Videos
@@ -119,7 +119,7 @@ Model Selection
 
 ---
 
-# Methodology
+# 🧠 Methodology
 
 ## 1. Data Preparation
 
@@ -307,7 +307,7 @@ This makes it particularly aligned with MonReader’s product requirements.
 
 ---
 
-# Repository Structure
+# 🔌 Repository Structure
 
 ```bash
 .
@@ -376,7 +376,7 @@ As the contributor to this project, I:
 
 ---
 
-# Conclusion
+# 🎈 Conclusion
 
 This project demonstrates practical capability across:
 
