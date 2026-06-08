@@ -212,6 +212,83 @@ Results showed varying degrees of overfitting and underperformance.
 
 ---
 
+# Model Evaluation Strategy
+
+For this project, model selection was based primarily on **F1 Score rather than accuracy**.
+
+Why?
+
+In page flip detection, both error types matter:
+
+- **False Positive** → Capturing while the page is still turning
+- **False Negative** → Missing the correct capture moment
+
+Accuracy alone may appear strong while producing undesirable behavior in production.
+
+F1 Score was therefore selected because it balances:
+
+\[
+F1 = \frac{2 \times Precision \times Recall}{Precision + Recall}
+\]
+
+Where:
+
+- **Precision** → How often predicted flips were actually flips
+- **Recall** → How many real flips were successfully detected
+- **F1 Score** → Overall balance between the two
+
+---
+
+# Model Comparison
+
+| Model | Precision | Recall | F1 Score | Notes |
+|--------|----------|--------|----------|------|
+| Custom CNN | 0.51 | 0.51 | **0.51** | Underperformed |
+| VGG16 | 0.89 | 0.89 | **0.89** | Strong improvement |
+| ResNet50 | — | — | Moderate | Higher complexity |
+| EfficientNet | — | — | Moderate | Mixed generalization |
+| 🏆 MobileNetV2 | **0.937** | **0.936** | **0.936** | Best overall |
+
+---
+
+# Final Selected Model — MobileNetV2
+
+MobileNetV2 was selected because it achieved the strongest **F1 Score**, demonstrating the best balance between detecting page flips and avoiding incorrect triggers.
+
+### Final Test Performance
+
+| Metric | Score |
+|---------|-------|
+| Precision | **93.7%** |
+| Recall | **93.6%** |
+| F1 Score | **93.6%** |
+
+Interpretation:
+
+- High precision → fewer incorrect captures
+- High recall → fewer missed page transitions
+- Strong F1 → reliable real-world scanning behavior
+
+---
+
+# Conclusion
+
+The final solution achieved an **F1 Score of 93.6%**, indicating strong and balanced performance for automated page capture workflows.
+
+This project demonstrates capability in:
+
+✔ Computer Vision  
+✔ Deep Learning  
+✔ Transfer Learning  
+✔ Experimental Evaluation  
+✔ Production-Oriented Model Selection  
+
+Rather than choosing the model with the highest accuracy, the final recommendation prioritized **balanced performance and real-world usability**, leading to the selection of **MobileNetV2** as the most deployment-ready architecture.
+
+For hiring managers and recruiters:
+
+This work demonstrates an understanding that successful machine learning projects are not just about maximizing accuracy—but selecting evaluation metrics that align with product behavior and business outcomes.
+
 ## 🏆 Final Selected Model — MobileNetV2
 
 Architecture:
