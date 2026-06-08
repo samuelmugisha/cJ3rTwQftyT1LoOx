@@ -387,7 +387,7 @@ This project demonstrates practical capability across:
 ✔ Experimental Design  
 ✔ Production-Oriented AI Thinking  
 
-The final MobileNetV2 solution achieved **93.6% test accuracy**, showing strong readiness for real-world document digitization workflows.
+The final MobileNetV2 solution achieved **93.6% F1 Score**, showing strong readiness for real-world document digitization workflows.
 
 For recruiters and hiring managers:
 
@@ -397,9 +397,9 @@ This work reflects the ability to move beyond model training into **problem fram
 
 ## Author
 
-**Samuel Mugisha**
+**Samuel Mugisha D.C**
 
-AI • Machine Learning • Healthcare Technology • Applied Data Science
+AI • Machine Learning • Applied Data Science
 
 GitHub:  
 https://github.com/samuelmugisha
