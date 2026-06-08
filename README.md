@@ -2,8 +2,6 @@
 MonReader: Document digitisation experience for the blind to predict if a given sequence of images contains an action of flipping.
 
 ## Background:
-Our company develops innovative Artificial Intelligence and Computer Vision solutions that revolutionize industries. Machines that can see: We pack our solutions in small yet intelligent devices that can be easily integrated to your existing data flow. Computer vision for everyone: Our devices can recognize faces, estimate age and gender, classify clothing types and colors, identify everyday objects and detect motion. Technical consultancy: We help you identify use cases of artificial intelligence and computer vision in your industry. Artificial intelligence is the technology of today, not the future.
-
 MonReader is a new mobile document digitization experience for the blind, for researchers and for everyone else in need for fully automatic, highly fast and high-quality document scanning in bulk. It is composed of a mobile app and all the user needs to do is flip pages and everything is handled by MonReader: it detects page flips from low-resolution camera preview and takes a high-resolution picture of the document, recognizing its corners and crops it accordingly, and it dewarps the cropped document to obtain a bird's eye view, sharpens the contrast between the text and the background and finally recognizes the text with formatting kept intact, being further corrected by MonReader's ML powered redactor.
 
 ## 🔄 Data Description
@@ -65,7 +63,7 @@ Performance: Performed very poorly (around 48% accuracy), essentially no better 
 
 ## MobileNetV2 (Base)
 Approach: Utilized a frozen MobileNetV2 base model (pre-trained on ImageNet) as a feature extractor, followed by a Flatten layer and a single Dense layer with sigmoid activation.
-Performance: Achieved high performance (around 90% accuracy, recall, precision, and F1 Score) on the test set, comparable to Model 2. Its lightweight architecture makes it suitable for mobile deployment scenarios.
+Performance: Achieved high performance (around 93% accuracy, recall, precision, and F1 Score) on the test set, comparable to Model 2. Its lightweight architecture makes it suitable for mobile deployment scenarios.
 
 ## Model Performance Comparison (Test Set)
 <center> <img src="images/Reader.jpg" alt="Perfomance metrics MonReader" width="500"></center>
