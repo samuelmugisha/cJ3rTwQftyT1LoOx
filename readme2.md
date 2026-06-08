@@ -207,6 +207,7 @@ Additional experiments included:
 - VGG16 + Data Augmentation
 - ResNet50
 - EfficientNetB0
+- MobileNetV2
 
 Results showed varying degrees of overfitting and underperformance.
 
@@ -241,55 +242,24 @@ Where:
 
 # Model Comparison
 
-| Model | Precision | Recall | F1 Score | Notes |
-|--------|----------|--------|----------|------|
-| Custom CNN | 0.51 | 0.51 | **0.51** | Underperformed |
-| VGG16 | 0.89 | 0.89 | **0.89** | Strong improvement |
-| ResNet50 | — | — | Moderate | Higher complexity |
-| EfficientNet | — | — | Moderate | Mixed generalization |
-| 🏆 MobileNetV2 | **0.937** | **0.936** | **0.936** | Best overall |
+| Model                       | Accuracy | Recall   | Precision | F1 Score |
+|-----------------------------|----------|----------|-----------|----------|
+| Simple CNN                  | 0.485762 | 0.485762 | 0.492990  | 0.329165 |
+| VGG-16 (Base)               | 0.891122 | 0.891122 | 0.894616  | 0.891040 |
+| VGG-16 (Base+FFNN)          | 0.522613 | 0.522613 | 0.528798  | 0.437108 |
+| VGG-16 (Base+FFNN+Data Aug) | 0.594640 | 0.594640 | 0.713517  | 0.519776 |
+| ResNet50 (Base)             | 0.628141 | 0.628141 | 0.685376  | 0.602816 |
+| EfficientNetB0 (Base)       | 0.485762 | 0.485762 | 0.235965  | 0.317635 |
+| 🏆MobileNetV2 (Base)          | 0.93173 | 0.9311778 | 0.936470  | 0.930664 |
+
 
 ---
 
-# Final Selected Model — MobileNetV2
 
-MobileNetV2 was selected because it achieved the strongest **F1 Score**, demonstrating the best balance between detecting page flips and avoiding incorrect triggers.
 
-### Final Test Performance
-
-| Metric | Score |
-|---------|-------|
-| Precision | **93.7%** |
-| Recall | **93.6%** |
-| F1 Score | **93.6%** |
-
-Interpretation:
-
-- High precision → fewer incorrect captures
-- High recall → fewer missed page transitions
-- Strong F1 → reliable real-world scanning behavior
-
----
-
-# Conclusion
+# 🏆 Final Selected Model — MobileNetV2
 
 The final solution achieved an **F1 Score of 93.6%**, indicating strong and balanced performance for automated page capture workflows.
-
-This project demonstrates capability in:
-
-✔ Computer Vision  
-✔ Deep Learning  
-✔ Transfer Learning  
-✔ Experimental Evaluation  
-✔ Production-Oriented Model Selection  
-
-Rather than choosing the model with the highest accuracy, the final recommendation prioritized **balanced performance and real-world usability**, leading to the selection of **MobileNetV2** as the most deployment-ready architecture.
-
-For hiring managers and recruiters:
-
-This work demonstrates an understanding that successful machine learning projects are not just about maximizing accuracy—but selecting evaluation metrics that align with product behavior and business outcomes.
-
-## 🏆 Final Selected Model — MobileNetV2
 
 Architecture:
 - MobileNetV2 (pretrained)
