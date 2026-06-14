@@ -270,7 +270,7 @@ Where:
 
 # 🏆 Final Selected Model — MobileNetV2
 
-The final solution achieved an **F1 Score of 93.6%**, indicating strong and balanced performance for automated page capture workflows.
+The final solution achieved an **F1 Score of 89.6%**, indicating strong and balanced performance for automated page capture workflows.
 
 Architecture:
 - MobileNetV2 (pretrained)
@@ -285,10 +285,10 @@ Special preprocessing:
 
 | Metric | Training | Test |
 |---------|----------|------|
-| Accuracy | 93.1% | **93.6%** |
-| Recall | 93.1% | **93.6%** |
-| Precision | 93.3% | **93.7%** |
-| F1 Score | 93.1% | **93.6%** |
+| Accuracy | 88.34% | **89.6%** |
+| Recall | 88.34% | **89.6%** |
+| Precision | 90.37% | **90.3%** |
+| F1 Score | 89.57% | **89.6%** |
 
 ---
 
@@ -336,14 +336,31 @@ Both the backend and frontend applications were deployed to separate Hugging Fac
 # 🔌 Repository Structure
 
 ```bash
-.
-├── notebooks/
-│   └── Monreader.ipynb
+
+├── backend_files/
+│   ├── monreader_saved_model/
+│   ├── .DS_Store
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── app.py
+│   ├── monreader.tflite
+│   └── requirements.txt
+├── frontend_files/
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── app.py
+│   └── requirements.txt
 ├── images/
-│   ├── train/
-│   └── test/
-├── models/
-├── outputs/
+│   ├── flip/
+│   ├── notflip/
+│   ├── MonReader.jpg
+│   ├── Monreader_Design.jpg
+│   └── Reader.jpg
+├── notebooks/
+│   ├── MobileNet_Deployment.ipynb
+│   └── Monreader.ipynb
+├── reports/
+│   └── monreader_view.jpg
 └── README.md
 ```
 
