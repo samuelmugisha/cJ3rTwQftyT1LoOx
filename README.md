@@ -28,6 +28,7 @@ The project contributes to **MonReader**, an AI-powered document digitization pl
 
 The page flip detector acts as an intelligent trigger mechanism that determines the optimal moment to capture document images automatically.
 
+<center> <img src="reports/monreader_view.jpg" alt="Monreader screenshot" width="900"></center>
 ---
 
 # 🎈 Business Problem
