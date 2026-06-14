@@ -304,6 +304,21 @@ MobileNetV2 demonstrated:
 This makes it particularly aligned with MonReader’s product requirements.
 
 ---
+# Deployment
+## Backend Deployment Setup (Flask API): 
+Files for a Flask API backend were created in the backend_files directory:
+- app.py: A Flask application to serve page-flip predictions using the TFLite model, handling image uploads and returning JSON responses.
+- requirements.txt: Lists Python dependencies for the Flask app, including tensorflow-cpu and opencv-python-headless.
+- Dockerfile: Defines the Docker image for the backend, setting up the environment, installing dependencies, copying the model and app.py, and configuring Gunicorn to run the Flask app.
+- README.md: Provides metadata and description for the Hugging Face Space.
+## Frontend Deployment Setup (Streamlit App): 
+Files for a Streamlit frontend application were created in the frontend_files directory:
+- app.py: A Streamlit application using st.components.v1.html to embed a custom HTML/CSS/JavaScript UI, allowing users to upload images and interact with the deployed backend API.
+- requirements.txt: Lists Python dependencies for the Streamlit app, including streamlit and requests.
+- Dockerfile: Defines the Docker image for the frontend, setting up the environment, installing dependencies, copying app.py, and configuring Streamlit to run the app.
+- README.md: Provides metadata and description for the Hugging Face Space.
+## Hugging Face Deployment: 
+Both the backend and frontend applications were deployed to separate Hugging Face Spaces ([dcsamuel/monreader](https://huggingface.co/spaces/dcsamuel/monreader) and ([dcsamuel/monreaderview](https://huggingface.co/spaces/dcsamuel/monreaderview) respectively). The huggingface_hub library was used to log in, create repositories, and upload the necessary files. For the backend, api.upload_folder with delete_patterns='*' was used to ensure a fresh upload, while for the frontend, individual files were uploaded using api.upload_file.
 
 # Tech Stack
 
