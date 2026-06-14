@@ -64,12 +64,8 @@ Develop and compare multiple Deep Learning approaches capable of:
 - Supporting future deployment in mobile environments
 
 Success was evaluated using:
-
-- Accuracy
-- Precision
-- Recall
 - F1 Score
-- Generalization capability
+- Lightweight deployment ability
 
 ---
 
@@ -180,7 +176,7 @@ Architecture:
 
 | Metric | Score |
 |---------|-------|
-| Accuracy | ~51% |
+| Accuracy | 32.9% |
 
 ### Observation
 
@@ -202,7 +198,7 @@ Architecture:
 
 | Metric | Score |
 |---------|-------|
-| Accuracy | ~89–90% |
+| F1 Score | ~89.1% |
 
 ### Observation
 
@@ -237,11 +233,7 @@ In page flip detection, both error types matter:
 
 Accuracy alone may appear strong while producing undesirable behavior in production.
 
-F1 Score was therefore selected because it balances:
-
-\[
-F1 = \frac{2 \times Precision \times Recall}{Precision + Recall}
-\]
+F1 Score was therefore selected because it balances Precision and Recall.
 
 Where:
 
@@ -255,8 +247,8 @@ Where:
 
 | Model                       | Accuracy | Recall   | Precision | F1 Score | Size (MBs) |
 |-----------------------------|----------|----------|-----------|----------|------------|
-| Simple CNN                  | 0.485762 | 0.485762 | 0.492990  | 0.329165 | 1.57       |
-| VGG-16 (Base)               | 0.891122 | 0.891122 | 0.894616  | 0.891040 | 56.13      |
+| Simple CNN                  | 0.514238 | 0.514238 | 0.264441  | 0.349272 | 1.57       |
+| VGG-16 (Base)               | 0.891122 | 0.891122 | 0.894616  | 0.891040 | 56.20      |
 | VGG-16 (Base+FFNN)          | 0.522613 | 0.522613 | 0.528798  | 0.437108 | 65.16      |
 | VGG-16 (Base+FFNN+Data Aug) | 0.594640 | 0.594640 | 0.713517  | 0.519776 | 65.16      |
 | ResNet50 (Base)             | 0.628141 | 0.628141 | 0.685376  | 0.602816 | 90.36      |
