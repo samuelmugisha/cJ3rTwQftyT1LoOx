@@ -440,8 +440,4 @@ This work reflects the ability to move beyond model training into **problem fram
 
 ## Author
 
-**Samuel Mugisha D.C**
-
-AI • Machine Learning • Applied Data Science
-
-[Linkedin](https://www.linkedin.com/in/samuelmugishadc/)
+**Samuel Mugisha D.C** AI • Machine Learning • Applied Data Science [Linkedin](https://www.linkedin.com/in/samuelmugishadc/)
