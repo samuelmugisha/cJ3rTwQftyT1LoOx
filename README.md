@@ -48,10 +48,6 @@ The challenge:
 
 ---
 
-<center> <img src="images/Monreader_Design.jpg" alt="Monreader System Design Diagram" width="900"></center>
-
----
-
 # 👁️ Project Objective
 
 Develop and compare multiple Deep Learning approaches capable of:
@@ -125,6 +121,8 @@ Model Selection
 ---
 
 # 🧠 Methodology
+
+<center> <img src="images/Monreader_Design.jpg" alt="Monreader System Design Diagram" width="900"></center>
 
 ## 1. Data Preparation
 
