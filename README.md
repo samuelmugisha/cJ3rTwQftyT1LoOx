@@ -32,7 +32,7 @@ The page flip detector acts as an intelligent trigger mechanism that determines 
 
 - Monreader project deployed at: https://huggingface.co/spaces/dcsamuel/monreaderview
 
-- Restart spaces: make sure backend at https://huggingface.co/spaces/dcsamuel/monreader is running to view
+- Restart spaces, Make sure backend at https://huggingface.co/spaces/dcsamuel/monreader is running to view
 
 
 ---
